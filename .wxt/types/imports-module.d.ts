@@ -17,8 +17,6 @@ declare module '#imports' {
   export { injectScript, ScriptPublicPath, InjectScriptOptions } from 'wxt/utils/inject-script';
   export { InvalidMatchPattern, MatchPattern } from 'wxt/utils/match-patterns';
   export { fakeBrowser } from 'wxt/testing';
-  export { InstagramDMService, InstagramDMService } from '../src/utils/instagramDM';
   export { Logger, Logger } from '../src/utils/logger';
   export { StorageService, StorageService } from '../src/utils/storage';
-  export { TaskManager, TaskManager } from '../src/utils/taskManager';
 }

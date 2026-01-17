@@ -2,12 +2,10 @@
 export {}
 declare global {
   const ContentScriptContext: typeof import('wxt/utils/content-script-context').ContentScriptContext
-  const InstagramDMService: typeof import('/Users/apple/ig get emails dm/src/utils/instagramDM').InstagramDMService
   const InvalidMatchPattern: typeof import('wxt/utils/match-patterns').InvalidMatchPattern
   const Logger: typeof import('/Users/apple/ig get emails dm/src/utils/logger').Logger
   const MatchPattern: typeof import('wxt/utils/match-patterns').MatchPattern
   const StorageService: typeof import('/Users/apple/ig get emails dm/src/utils/storage').StorageService
-  const TaskManager: typeof import('/Users/apple/ig get emails dm/src/utils/taskManager').TaskManager
   const browser: typeof import('wxt/browser').browser
   const createIframeUi: typeof import('wxt/utils/content-script-ui/iframe').createIframeUi
   const createIntegratedUi: typeof import('wxt/utils/content-script-ui/integrated').createIntegratedUi
@@ -52,15 +50,9 @@ declare global {
   export type { ScriptPublicPath, InjectScriptOptions } from 'wxt/utils/inject-script'
   import('wxt/utils/inject-script')
   // @ts-ignore
-  export type { InstagramDMService } from '/Users/apple/ig get emails dm/src/utils/instagramDM'
-  import('/Users/apple/ig get emails dm/src/utils/instagramDM')
-  // @ts-ignore
   export type { Logger } from '/Users/apple/ig get emails dm/src/utils/logger'
   import('/Users/apple/ig get emails dm/src/utils/logger')
   // @ts-ignore
   export type { StorageService } from '/Users/apple/ig get emails dm/src/utils/storage'
   import('/Users/apple/ig get emails dm/src/utils/storage')
-  // @ts-ignore
-  export type { TaskManager } from '/Users/apple/ig get emails dm/src/utils/taskManager'
-  import('/Users/apple/ig get emails dm/src/utils/taskManager')
 }
