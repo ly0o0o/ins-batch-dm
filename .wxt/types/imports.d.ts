@@ -3,9 +3,9 @@ export {}
 declare global {
   const ContentScriptContext: typeof import('wxt/utils/content-script-context').ContentScriptContext
   const InvalidMatchPattern: typeof import('wxt/utils/match-patterns').InvalidMatchPattern
-  const Logger: typeof import('/Users/apple/ig get emails dm/src/utils/logger').Logger
+  const Logger: typeof import('/Users/jike/Desktop/Developer/ins-batch-dm/src/utils/logger').Logger
   const MatchPattern: typeof import('wxt/utils/match-patterns').MatchPattern
-  const StorageService: typeof import('/Users/apple/ig get emails dm/src/utils/storage').StorageService
+  const StorageService: typeof import('/Users/jike/Desktop/Developer/ins-batch-dm/src/utils/storage').StorageService
   const browser: typeof import('wxt/browser').browser
   const createIframeUi: typeof import('wxt/utils/content-script-ui/iframe').createIframeUi
   const createIntegratedUi: typeof import('wxt/utils/content-script-ui/integrated').createIntegratedUi
@@ -50,9 +50,9 @@ declare global {
   export type { ScriptPublicPath, InjectScriptOptions } from 'wxt/utils/inject-script'
   import('wxt/utils/inject-script')
   // @ts-ignore
-  export type { Logger } from '/Users/apple/ig get emails dm/src/utils/logger'
-  import('/Users/apple/ig get emails dm/src/utils/logger')
+  export type { Logger } from '/Users/jike/Desktop/Developer/ins-batch-dm/src/utils/logger'
+  import('/Users/jike/Desktop/Developer/ins-batch-dm/src/utils/logger')
   // @ts-ignore
-  export type { StorageService } from '/Users/apple/ig get emails dm/src/utils/storage'
-  import('/Users/apple/ig get emails dm/src/utils/storage')
+  export type { StorageService } from '/Users/jike/Desktop/Developer/ins-batch-dm/src/utils/storage'
+  import('/Users/jike/Desktop/Developer/ins-batch-dm/src/utils/storage')
 }
