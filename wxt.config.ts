@@ -17,6 +17,17 @@ export default defineConfig({
   },
   srcDir: 'src',
   outDir: 'dist',
+  vite: () => ({
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: 'assets/[name][extname]',
+          chunkFileNames: 'chunks/[name].js',
+          entryFileNames: 'chunks/[name].js',
+        }
+      }
+    }
+  }),
   alias: {
     '@': 'src',
     '@/utils': 'src/utils',
