@@ -1,4 +1,3 @@
-import './style.css';
 import { StorageService } from '@/utils/storage';
 import { Logger } from '@/utils/logger';
 import type { TaskConfig } from '@/types';
@@ -206,8 +205,13 @@ async function checkRunningTask() {
 
 // 开始任务
 async function startTask() {
+  console.log('[WaveInflu Popup] ===== START TASK CALLED =====');
+  
   const links = parseLinks(elements.profileLinks.value);
   const message = elements.messageTemplate.value.trim();
+
+  console.log('[WaveInflu Popup] Links:', links);
+  console.log('[WaveInflu Popup] Message:', message);
 
   // 验证
   if (links.length === 0) {
